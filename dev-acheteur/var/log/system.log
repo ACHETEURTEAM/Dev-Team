@@ -860,3 +860,54 @@ Class Ced\CsMarketplace\Controller\Vreports\Filtervorders\Interceptor generation
 [2024-10-07T20:15:26.034593+00:00] main.INFO: Add of item with id Ecomteck_OrderComment::configuration was processed [] []
 [2024-10-07T20:15:26.035021+00:00] main.INFO: Add of item with id PayPal_Braintree::settlement_report was processed [] []
 [2024-10-07T20:15:26.035413+00:00] main.INFO: Add of item with id PayPal_Braintree::virtual_terminal was processed [] []
+[2024-10-07T21:06:43.419026+00:00] main.INFO: /usr/bin/php8.2 -f /var/www/html/dev-acheteur/bin/magento cache:flush 2>&1
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql' (tried: /usr/lib/php/20220829/pdo_mysql (/usr/lib/php/20220829/pdo_mysql: cannot open shared object file: No such file or directory), /usr/lib/php/20220829/pdo_mysql.so (/usr/lib/php/20220829/pdo_mysql.so: undefined symbol: pdo_parse_params)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'xsl' (tried: /usr/lib/php/20220829/xsl (/usr/lib/php/20220829/xsl: cannot open shared object file: No such file or directory), /usr/lib/php/20220829/xsl.so (/usr/lib/php/20220829/xsl.so: undefined symbol: dom_node_class_entry)) in Unknown on line 0
+PHP Warning:  Module "curl" is already loaded in Unknown on line 0
+PHP Warning:  Module "gd" is already loaded in Unknown on line 0
+PHP Warning:  Module "intl" is already loaded in Unknown on line 0
+PHP Warning:  Module "mbstring" is already loaded in Unknown on line 0
+PHP Warning:  Module "soap" is already loaded in Unknown on line 0
+PHP Warning:  Module "zip" is already loaded in Unknown on line 0
+Flushed cache types:
+config
+layout
+block_html
+collections
+reflection
+db_ddl
+compiled_config
+eav
+customer_notification
+config_integration
+config_integration_api
+full_page
+config_webservice
+translate [] []
+[2024-10-07T21:13:21.233107+00:00] main.ERROR: Unable to proceed: the maintenance mode is enabled.  [] []
+[2024-10-07T21:13:39.758084+00:00] main.INFO: /usr/bin/php8.2 -f /var/www/html/dev-acheteur/bin/magento cache:flush 2>&1
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql' (tried: /usr/lib/php/20220829/pdo_mysql (/usr/lib/php/20220829/pdo_mysql: cannot open shared object file: No such file or directory), /usr/lib/php/20220829/pdo_mysql.so (/usr/lib/php/20220829/pdo_mysql.so: undefined symbol: pdo_parse_params)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'xsl' (tried: /usr/lib/php/20220829/xsl (/usr/lib/php/20220829/xsl: cannot open shared object file: No such file or directory), /usr/lib/php/20220829/xsl.so (/usr/lib/php/20220829/xsl.so: undefined symbol: dom_node_class_entry)) in Unknown on line 0
+PHP Warning:  Module "curl" is already loaded in Unknown on line 0
+PHP Warning:  Module "gd" is already loaded in Unknown on line 0
+PHP Warning:  Module "intl" is already loaded in Unknown on line 0
+PHP Warning:  Module "mbstring" is already loaded in Unknown on line 0
+PHP Warning:  Module "soap" is already loaded in Unknown on line 0
+PHP Warning:  Module "zip" is already loaded in Unknown on line 0
+Flushed cache types:
+config
+layout
+block_html
+collections
+reflection
+db_ddl
+compiled_config
+eav
+customer_notification
+config_integration
+config_integration_api
+full_page
+config_webservice
+translate [] []
+[2024-10-07T21:13:53.471387+00:00] main.ERROR: Unable to proceed: the maintenance mode is enabled.  [] []
+[2024-10-07T21:13:53.496822+00:00] main.ERROR: Unable to proceed: the maintenance mode is enabled.  [] []
