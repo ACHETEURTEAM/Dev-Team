@@ -1,0 +1,28 @@
+{
+    "name": "ced/marketplace-platinum",
+    "description": "Extension which will convert your magento 2 store in to multi-vendor marketplace.",
+    "require": {
+        "php": "~7.3.0|~7.4.0",
+        "magento/magento-composer-installer": "*",
+        "ced/marketplace-basic": "6.0.48",
+        "ced/module-cscommission": "*",
+        "ced/module-csmultishipping": "*",
+        "ced/module-csorder": "*",
+        "ced/module-cstransaction": "*",
+        "ced/module-csproduct": "*",
+        "ced/module-csproassign": "*",
+        "ced/module-csupsshipping": "*",
+        "ced/module-csvendorproductattribute": "*",
+        "ced/module-csvendorreview": "*",
+        "ced/module-vendorsociallogin": "*",
+        "ced/module-csenhancement": "*"
+    },
+    "suggest": {
+        "ced/csjetpatch": "Make marketplace compatible with Jet theme"
+    },
+    "type": "metapackage",
+    "version": "6.0.48",
+    "license": [
+        "EULA"
+    ]
+}

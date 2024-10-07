@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="vendorpanel"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="csmarketplace_vendor"/>
+    <body>
+        <referenceBlock name="vendor.dashboard.wrapper">
+            <block class="Ced\CsTransaction\Block\Vpayments\Stats\Request"
+                   name="csmarketplace_vendor_payments_stats_requestdgd"
+                   template="Ced_CsTransaction::vpayments/stats/request.phtml" cacheable="false"/>
+            <uiComponent name="requested_transaction_listing"/>
+        </referenceBlock>
+    </body>
+</page>
+
+

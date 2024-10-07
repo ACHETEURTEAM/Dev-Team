@@ -1,0 +1,28 @@
+<?php
+
+
+
+// @codingStandardsIgnoreFile
+?>
+<?php
+$vorder = $this->helper('Ced\CsMarketplace\Helper\Data')->getCurrentVorder();
+$_order  = $block->getOrder();
+$_source = $block->getSource();
+$_fullInfo  = $block->getFullTaxInfo();
+?>
+<?php if($vorder->getBaseTaxAmount()){?>
+<tr class="0">
+    <td style="padding-bottom:3px; padding-left: 9px; padding-right: 9px; padding-top: 3px" align="right" class="a-right" colspan="3">
+        <div class="summary-collapse">
+        <?php if ($block->helper('tax')->displayFullSummary()): ?>
+            <?= __('Total Tax') ?>
+        <?php else: ?>
+            <?= __('Tax') ?>
+        <?php endif;?>
+        </div>
+    </td>
+    <td style="padding-bottom:3px; padding-left: 9px; padding-right: 9px; padding-top: 3px" align="right" class="a-right" colspan="3">
+        <?= $block->displayAmount($vorder->getPurchaseTaxAmount(), $vorder->getBaseTaxAmount()); ?>
+    </td>
+    <?php }?>
+</tr>

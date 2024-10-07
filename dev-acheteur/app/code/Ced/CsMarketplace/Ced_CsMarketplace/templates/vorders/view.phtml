@@ -1,0 +1,21 @@
+<?php
+
+
+
+?>
+<div class="row">
+<div class="col-md-12" style="margin-top:10px;">
+<?= /* @noEscape */ $block->getChildHtml('info') ?>
+<div class="row">
+	<div class="order-details col-md-12">
+	    <?= /* @noEscape */ $block->getChildHtml('order_items') ?>
+	</div>
+</div>
+<div class="buttons-set">
+        <p class="back-link"><a href="<?= /* @noEscape */ $block->getBackUrl() ?>"><small>&laquo; </small><?= /* @noEscape */ __('Back to Orders') ?></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

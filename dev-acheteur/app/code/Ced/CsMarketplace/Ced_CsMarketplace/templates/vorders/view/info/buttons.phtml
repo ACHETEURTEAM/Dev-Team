@@ -1,0 +1,23 @@
+<?php
+
+
+
+?>
+<?php
+$_order = $block->getOrder();
+$vorder = $block->getVOrder();
+?>
+<?php
+if ($block->getRequest()->getActionName() != "print") {
+    ?>
+    <div class="buttons-set col-md-6  col-xs-12 buttons_scb">
+        <button type="button" onclick="window.open('<?= /* @noEscape */ $block->getPrintUrl($vorder); ?>')"
+                title="<?= /* @noEscape */ __('Print Order') ?>"
+                class="button btn btn-warning uptransform pull-right">
+            <span>
+                <span><?= /* @noEscape */ __('Print Order') ?></span>
+            </span>
+        </button>
+    </div>
+<?php } ?>
+<?= /* @noEscape */ $block->getChildHtml(); ?>

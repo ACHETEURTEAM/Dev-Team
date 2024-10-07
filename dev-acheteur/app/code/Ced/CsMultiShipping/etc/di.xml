@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+	<preference for="Magento\Shipping\Model\Shipping" type="Ced\CsMultiShipping\Model\Shipping" />
+	<preference for="Magento\Quote\Model\Cart\ShippingMethodConverter"
+                type="Ced\CsMultiShipping\Model\Cart\ShippingMethodConverter" />
+	<preference for="Magento\Checkout\Model\ShippingInformationManagement"
+                type="Ced\CsMultiShipping\Model\ShippingInformationManagement" />
+    <type name="Magento\Framework\Setup\Declaration\Schema\Declaration\ReaderComposite">
+        <plugin name="ced_csmutishipping_db_validation" type="Ced\CsMultiShipping\Plugin\ReaderComposite" sortOrder="1"/>
+    </type>
+</config>

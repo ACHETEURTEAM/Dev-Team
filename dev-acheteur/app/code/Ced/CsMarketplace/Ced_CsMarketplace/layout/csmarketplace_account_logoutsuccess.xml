@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="vendor-empty" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<update handle="csmarketplace_vendor" />
+    <body>
+        <referenceBlock name="root">
+            <action method="setHeaderTitle">
+                <argument translate="true" name="title" xsi:type="string">You are signed out.</argument>
+            </action>
+        </referenceBlock>
+		<referenceContainer name="content">
+           <block class="Magento\Framework\View\Element\Template" name="vendor_logout" template="Ced_CsMarketplace::customer/logout.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

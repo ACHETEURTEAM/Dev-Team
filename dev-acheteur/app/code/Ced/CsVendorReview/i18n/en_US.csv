@@ -1,0 +1,80 @@
+Rating,Rating
+"Add New","Add New"
+"Save Rating","Save Rating"
+"Delete Rating","Delete Rating"
+"Save and Continue Edit","Save and Continue Edit"
+"Edit Rating '%1'","Edit Rating '%1'"
+"New Rating","New Rating"
+General,General
+"Rating Label","Rating Label"
+"Rating Code","Rating Code"
+"Sort Order","Sort Order"
+"Rating Information","Rating Information"
+ID,ID
+Delete,Delete
+"Are you sure?","Are you sure?"
+"Manage Vendor Review","Manage Vendor Review"
+"Save Review","Save Review"
+"Delete Review","Delete Review"
+"Edit Review '%1'","Edit Review '%1'"
+"New Review","New Review"
+"Vendor Name","Vendor Name"
+"Customer Name","Customer Name"
+rating_label,rating_label
+Subject,Subject
+Review,Review
+Status,Status
+"Please Select Option","Please Select Option"
+"1 OUT OF 5","1 OUT OF 5"
+"2 OUT OF 5","2 OUT OF 5"
+"3 OUT OF 5","3 OUT OF 5"
+"4 OUT OF 5","4 OUT OF 5"
+"5 OUT OF 5","5 OUT OF 5"
+Pending,Pending
+Approved,Approved
+Disapproved,Disapproved
+"Review Information","Review Information"
+"Review Subject","Review Subject"
+"Review Description","Review Description"
+status,status
+"Deleted successfully !","Deleted successfully !"
+"This row no longer exists.","This row no longer exists."
+"Manage Rating","Manage Rating"
+"Manage Rating Items","Manage Rating Items"
+"Please select rating(s).","Please select rating(s)."
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"A total of %1 record(s) have been updated.","A total of %1 record(s) have been updated."
+"Rating Criteria Has been Saved.","Rating Criteria Has been Saved."
+"Sorry Rating Code Not Editable","Sorry Rating Code Not Editable"
+"Rating Item with the same code already exists.","Rating Item with the same code already exists."
+"Somethinggg went wrong while saving the rating.","Somethinggg went wrong while saving the rating."
+"Something went wrong while saving the rating.","Something went wrong while saving the rating."
+"Edit Review","Edit Review"
+"Please select review(s).","Please select review(s)."
+"Review Has been Saved.","Review Has been Saved."
+"Something went wrong while saving the review.","Something went wrong while saving the review."
+"Customer Review","Customer Review"
+"Something went wrong while submitting review","Something went wrong while submitting review"
+"Write Your Own Review","Write Your Own Review"
+"* Required Fields","* Required Fields"
+"You're reviewing: %1","You're reviewing: %1"
+"Your Rating","Your Rating"
+"%1 %2","%1 %2"
+Nickname,Nickname
+Summary,Summary
+"Submit Review","Submit Review"
+"You can not write review for yourself.","You can not write review for yourself."
+"Only registered users can write reviews. Please, <a href=""%1"">Sign in</a> or <a href=""%2"">create an account</a>","Only registered users can write reviews. Please, <a href=""%1"">Sign in</a> or <a href=""%2"">create an account</a>"
+"Please login to review product!","Please login to review product!"
+"You cannot review this vendor as you have not purchased any item from this vendor.","You cannot review this vendor as you have not purchased any item from this vendor."
+By,By
+"Posted on","Posted on"
+" on "," on "
+"Vendor Review & Rating","Vendor Review & Rating"
+"Average Rating","Average Rating"
+"Read / Add Review","Read / Add Review"
+"Be The First To Review","Be The First To Review"
+"Vendor Review And Rating","Vendor Review And Rating"
+"Enable Vendor Review System","Enable Vendor Review System"
+"Admin Approval Required","Admin Approval Required"
+"Allow Customer To Rate Vendor Only If They Have Purchased Vendor's Product","Allow Customer To Rate Vendor Only If They Have Purchased Vendor's Product"

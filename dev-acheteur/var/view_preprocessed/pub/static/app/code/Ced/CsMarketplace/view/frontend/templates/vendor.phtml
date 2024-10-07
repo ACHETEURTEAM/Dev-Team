@@ -1,0 +1,1 @@
+<?php ?> <?php $vendorData = $block->getVendorData(); if ($vendorData->getId()) {?> <div class="vendor-info"><?= /* @noEscape */ __('Vendor').' : ';?> <a href=<?= /* @noEscape */ $vendorData->getVendorShopUrl();?>><?= /* @noEscape */ $vendorData->getPublicName(); ?></a></div><?php } ?> <style> .vendor-info { margin-bottom: 8px; margin-top: 4px; }</style>

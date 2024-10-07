@@ -1,0 +1,18 @@
+<?php
+
+?>
+<?php /** @var $block Ced\CsTransaction\Block\Adminhtml\Vpayments\Edit\Tab\Addorder */ ?>
+<?php list($formHtml, $html) = $block->getSearchFormHtml(); ?>
+<?= /* @noEscape */
+$formHtml; ?>
+<div id="order-items">
+    <?= /* @noEscape */
+    $html; ?>
+</div>
+<div id="order-errors"></div>
+<br/>
+<div id="order-search" class="csmarketplace-order-search-items" style="display:none">
+    <?= /* @noEscape */
+    $block->getLayout()->createBlock(\Ced\CsTransaction\Block\Adminhtml\Vpayments\Edit\Tab\Addorder\Search::class)
+        ->setTemplate('Ced_CsTransaction::vpayments/edit/tab/addorder/search.phtml')->toHtml(); ?>
+</div>

@@ -1,0 +1,10 @@
+<?php
+
+?>
+<?php if ($block->_currentBlock->facebookEnabled()): ?>
+    <div class="ced-sociallogin-login-facebook">
+        <h3><?= $block->escapeHtml('Facebook Connect') ?></h3>
+        <p><?= $block->escapeHtml('You can continue using your <strong>Facebook</strong> account.') ?></p>
+        <?= $block->getChildHtml('ced_sociallogin_checkout_facebook_button'); ?>
+    </div>
+<?php endif; ?>

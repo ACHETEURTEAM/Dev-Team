@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="controller_action_predispatch_csmarketplace_vorders_index">
+        <observer name="csorder_listing_active_after" instance="Ced\CsOrder\Observer\ChangeListLink" shared="false" />
+	</event>
+	<event name="controller_action_predispatch_csmarketplace_vorders_view">
+        <observer name="csorder_view_active_after" instance="Ced\CsOrder\Observer\ChangeViewLink" shared="false" />
+	</event>
+</config>

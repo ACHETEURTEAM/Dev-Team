@@ -1,0 +1,24 @@
+<?php
+
+
+// @codingStandardsIgnoreFile
+?>
+<meta http-equiv="Content-Type" content="<?= /* @noEscape */  $this->getContentType() ?>" />
+<title><?= /* @noEscape */  $this->getTitle() ?></title>
+<meta name="description" content="<?= /* @noEscape */  htmlspecialchars($this->getDescription()) ?>" />
+<meta name="keywords" content="<?= /* @noEscape */  htmlspecialchars($this->getKeywords()) ?>" />
+<meta name="robots" content="<?= /* @noEscape */  htmlspecialchars($this->getRobots()) ?>" />
+<link rel="icon" href="<?= /* @noEscape */  $this->getFaviconFile(); ?>" type="image/x-icon" />
+<link rel="shortcut icon" href="<?= /* @noEscape */  $this->getFaviconFile(); ?>" type="image/x-icon" />
+<!--[if lt IE 7]>
+	<script type="text/javascript">
+	//<![CDATA[
+	    var BLANK_URL = '<?= /* @noEscape */  $this->helper('core/js')->getJsUrl('blank.html') ?>';
+	    var BLANK_IMG = '<?= /* @noEscape */  $this->helper('core/js')->getJsUrl('spacer.gif') ?>';
+	//]]>
+	</script>
+<![endif]-->
+<?php echo $this->getCssJsHtml() ?>
+<?php echo $this->getChildHtml() ?>
+<?= /* @noEscape */  $this->helper('core/js')->getTranslatorScript() ?>
+<?= /* @noEscape */  $this->getIncludes() ?>

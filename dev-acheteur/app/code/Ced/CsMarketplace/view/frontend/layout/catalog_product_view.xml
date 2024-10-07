@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+
+ -->
+<body>
+    <referenceContainer name="product.info.main">
+        <block class="Ced\CsMarketplace\Block\Catalog\Product\View"
+            name="product.view.extra"
+            template="Ced_CsMarketplace::vendor.phtml" before="-">
+        </block>
+    </referenceContainer>
+</body>

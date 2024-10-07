@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Ced\CsMarketplace\Block\Adminhtml\Vendor\Add" name="csmarketplace.vendor.entity.add.grid"/>
+        </referenceContainer>
+        <referenceContainer name="admin.grid.grid.view">
+            <block class="Magento\Framework\View\Element\Text\ListText" name="grid.bottom.links">
+            	<block class="Magento\Catalog\Block\Adminhtml\Rss\Grid\Link" name="grid.rss.link"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
