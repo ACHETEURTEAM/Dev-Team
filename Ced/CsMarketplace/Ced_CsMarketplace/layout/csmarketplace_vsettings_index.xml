@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="csmarketplace_vendor"/>
+    <body>
+		<referenceContainer name="vendor.dashboard.wrapper">
+			<block class ="Ced\CsMarketplace\Block\Vsettings\Payment" name="vsettings.payment" cacheable="false" as="vsettings.payment" template="Ced_CsMarketplace::vsettings/settings.phtml" >
+				<block class ="Ced\CsMarketplace\Block\Vsettings\Payment\Methods" name="vsettings_payment_methods"  template="Ced_CsMarketplace::vsettings/payment/methods.phtml"/>
+			</block>
+		</referenceContainer>
+   </body>
+</page>

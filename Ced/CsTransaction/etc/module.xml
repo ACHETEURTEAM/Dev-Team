@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Ced_CsTransaction"  setup_version="1.0.6" release_version="3.0.10">
+		<sequence>
+            <module name="Ced_CsMarketplace" />
+        </sequence>
+    </module>
+</config>

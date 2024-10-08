@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Ced\CsMarketplace\Block\Adminhtml\Vpayments\Edit\Tab\Paymentinformation"
+                type="Ced\CsTransaction\Block\Adminhtml\Vpayments\Edit\Tab\Paymentinformation"/>
+  	<preference for="Ced\CsMarketplace\Block\Adminhtml\Vpayments\Edit\Tab\Addorder"
+                type="Ced\CsTransaction\Block\Adminhtml\Vpayments\Edit\Tab\Addorder"/>
+  	<preference for="Ced\CsMarketplace\Block\Adminhtml\Vpayments\Edit\Tab\Addorder\Search\Grid"
+                type="Ced\CsTransaction\Block\Adminhtml\Vpayments\Edit\Tab\Addorder\Search\Grid"/>
+  	<preference for="Ced\CsMarketplace\Block\Adminhtml\Vorders\Grid\Renderer\Paynow"
+                type="Ced\CsTransaction\Block\Adminhtml\Vorders\Grid\Renderer\Paynow"/>
+  	<preference for="Ced\CsMarketplace\Block\Adminhtml\Vpayments\Grid\Renderer\Orderdesc"
+                type="Ced\CsTransaction\Block\Adminhtml\Vpayments\Grid\Renderer\Orderdesc"/>
+  	<preference for="Ced\CsMarketplace\Block\Adminhtml\Vpayments\Details\Form"
+                type="Ced\CsTransaction\Block\Adminhtml\Vpayments\Details\Form"/>
+  	<preference for="Ced\CsMarketplace\Controller\Adminhtml\Vpayments\Save"
+                type="Ced\CsTransaction\Controller\Adminhtml\Vpayments\Save"/>
+</config>

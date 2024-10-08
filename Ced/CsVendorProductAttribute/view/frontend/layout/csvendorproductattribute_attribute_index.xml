@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <update handle="csmarketplace_vendor"/>
+    <body>
+        <block name="require.js" class="Ced\CsMarketplace\Block\Page\RequireJs"
+               template="Magento_Backend::page/js/require_js.phtml"/>
+        <referenceBlock name="vendor.dashboard.wrapper">
+            <block class="Ced\CsVendorProductAttribute\Block\Product\Attribute" name="csproduct_vproducts_attribute"
+                   cacheable="false"/>
+        </referenceBlock>
+    </body>
+</page>

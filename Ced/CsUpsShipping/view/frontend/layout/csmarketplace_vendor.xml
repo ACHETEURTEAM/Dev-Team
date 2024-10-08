@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- 
+
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="vendorpanel" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<update handle="csmarketplace_vendor"/>
+    <body>
+    	<referenceBlock name="notification.links" >
+            <block class="Ced\CsUpsShipping\Block\Index" name="csupsshipping.notification" template="Ced_CsUpsShipping::upsshipping/notification.phtml" cacheable="false">            
+			</block>
+        </referenceBlock>
+    </body>
+</page>
+
+
+
+
+

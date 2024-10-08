@@ -1,0 +1,106 @@
+<?php
+
+
+namespace Ced\CsMarketplace\Block\Vorders\View;
+
+
+use Magento\Framework\Registry;
+use Magento\Framework\View\Element\Template\Context;
+use Magento\Payment\Helper\Data;
+use Magento\Sales\Block\Order\Info as MagentoOrderInfo;
+use Magento\Sales\Model\Order\Address\Renderer;
+
+/**
+ * Class Info
+ * @package Ced\CsMarketplace\Block\Vorders\View
+ */
+class Info extends MagentoOrderInfo
+{
+
+    /**
+     * Info constructor.
+     * @param Context $context
+     * @param Registry $registry
+     * @param Data $paymentHelper
+     * @param Renderer $addressRenderer
+     * @param array $data
+     */
+    public function __construct(
+        Context $context,
+        Registry $registry,
+        Data $paymentHelper,
+        Renderer $addressRenderer,
+        array $data = []
+    ) {
+        parent::__construct($context, $registry, $paymentHelper, $addressRenderer);
+    }
+
+    /**
+     * @return void
+     */
+    protected function _construct()
+    {
+        parent::_construct();
+        $this->setTemplate('vorders/view/info.phtml');
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLinks()
+    {
+        $this->checkLinks();
+        unset($this->_links['invoice']);
+        return $this->_links;
+    }
+
+    /**
+     * @return void
+     */
+    private function checkLinks()
+    {
+        $order = $this->getOrder();
+        if (!$order->hasInvoices()) {
+            unset($this->_links['invoice']);
+        }
+        if (!$order->hasShipments()) {
+            unset($this->_links['shipment']);
+        }
+        if (!$order->hasCreditmemos()) {
+            unset($this->_links['creditmemo']);
+        }
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getOrderStoreName()
+    {
+        if ($this->getOrder()) {
+            $storeId = $this->getOrder()->getStoreId();
+            if ($storeId === null) {
+                $deleted = __(' [deleted]');
+                return nl2br($this->getOrder()->getStoreName()) . $deleted;
+            }
+
+            $store = $this->_storeManager->getStore($storeId);
+            $name = array(
+                $store->getWebsite()->getName(),
+                $store->getGroup()->getName(),
+                $store->getName()
+            );
+            return implode('<br/>', $name);
+        }
+        return null;
+    }
+
+    /**
+     * @throws \Magento\Framework\Exception\LocalizedException
+     */
+    protected function _prepareLayout()
+    {
+        $this->pageConfig->getTitle()->set(__('Order # %1', $this->getOrder()->getRealOrderId()));
+        $infoBlock = $this->paymentHelper->getInfoBlock($this->getOrder()->getPayment(), $this->getLayout());
+        $this->setChild('payment_info', $infoBlock);
+    }
+}

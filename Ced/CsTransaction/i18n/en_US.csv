@@ -1,0 +1,85 @@
+"Purchased On","Purchased On"
+"Order ID#","Order ID#"
+"Qty Ordered","Qty Ordered"
+"Qty Paid","Qty Paid"
+"Qty Refunded","Qty Refunded"
+"Qty Ready To Pay","Qty Ready To Pay"
+"Qty Ready To Refund","Qty Ready To Refund"
+"Amount Ready To Pay","Amount Ready To Pay"
+"Amount Ready To Return","Amount Ready To Return"
+"Order Payment State","Order Payment State"
+ID,ID
+G.T.,G.T.
+"Commission Fee","Commission Fee"
+"Vendor Payment","Vendor Payment"
+Paid,Paid
+Cancelled,Cancelled
+Pending,Pending
+"Partially Paid","Partially Paid"
+Refund,Refund
+"Vendor Name","Vendor Name"
+"Payment Method","Payment Method"
+"Beneficiary Details","Beneficiary Details"
+"Order Details","Order Details"
+"Transaction ID#","Transaction ID#"
+"Transaction Date","Transaction Date"
+"Transaction Mode","Transaction Mode"
+"Transaction Type","Transaction Type"
+"Credit Type","Credit Type"
+"Debit Type","Debit Type"
+"Total Shipping Amount","Total Shipping Amount"
+Amount,Amount
+"Adjustment Amount","Adjustment Amount"
+"Net Amount","Net Amount"
+Notes,Notes
+"Transaction Details","Transaction Details"
+Continue,Continue
+"Add/Remove Amount(s) for Payment","Add/Remove Amount(s) for Payment"
+"Can't continue with payment,because vendor did not specify payment method(s).","Can't continue with payment,because vendor did not specify payment method(s)."
+"Beneficiary  Information","Beneficiary  Information"
+"Beneficiary Vendor","Beneficiary Vendor"
+"Selected Amount(s) for Payment","Selected Amount(s) for Payment"
+"Order ID","Order ID"
+"Returning Qty","Returning Qty"
+"Vendor Refund","Vendor Refund"
+"Include Shipping","Include Shipping"
+"Paying Qty","Paying Qty"
+"Total Amount","Total Amount"
+"Add Selected Amount(s) for Payment","Add Selected Amount(s) for Payment"
+"Please Select Amount(s) to Add","Please Select Amount(s) to Add"
+Select,Select
+"G.T. (Base)","G.T. (Base)"
+"Transaction Information","Transaction Information"
+Vendor,Vendor
+"Readonly field","Readonly field"
+"Select Payment Method","Select Payment Method"
+"Enter adjustment amount if any (amount entered will get deducted from vendor's pending amount)","Enter adjustment amount if any (amount entered will get deducted from vendor's pending amount)"
+"Transaction Id","Transaction Id"
+"Amount Description","Amount Description"
+"Order Id","Order Id"
+"Order Total","Order Total"
+"Net Earned","Net Earned"
+CsMarketplace,CsMarketplace
+"Manage Requested Transactions","Manage Requested Transactions"
+"Adjustment Amount cannot be greater that net paid amount","Adjustment Amount cannot be greater that net paid amount"
+"Payment is  successfully saved","Payment is  successfully saved"
+"Requsted Transaction","Requsted Transaction"
+"Requested Transaction","Requested Transaction"
+"Please select amount(s).","Please select amount(s)."
+"Total of %1 amount(s) have been requested for payment.","Total of %1 amount(s) have been requested for payment."
+"Payment(s) have been already requested for payment.","Payment(s) have been already requested for payment."
+Requested,Requested
+"Not Allowed","Not Allowed"
+"Payments Statistics","Payments Statistics"
+"Total Pending Amount","Total Pending Amount"
+"Total Requested Amount","Total Requested Amount"
+"Total Cancelled Amount","Total Cancelled Amount"
+"Request Date","Request Date"
+"Amount To Pay","Amount To Pay"
+Status,Status
+Action,Action
+Transactions,Transactions
+"View All Transaction","View All Transaction"
+"Order Date","Order Date"
+"Pending Amount","Pending Amount"
+"Cancelled Amount","Cancelled Amount"

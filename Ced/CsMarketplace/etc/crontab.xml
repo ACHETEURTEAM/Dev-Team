@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="ced_csmarketplace_feed" instance="Ced\CsMarketplace\Model\Feed"
+             method="invoke">
+            <schedule>0 * * * *</schedule>
+        </job>
+        <job name="ced_csmarketplace_check_license" instance="Ced\CsMarketplace\Block\Adminhtml\Extensions\Details"
+             method="checkLicense">
+            <schedule>0 * * * *</schedule>
+        </job>
+        <job name="ced_csmarketplace_clear_nofifications" instance="Ced\CsMarketplace\Helper\Data"
+             method="deleteOldNotifications">
+            <schedule>0 * * * *</schedule>
+        </job>
+        <job name="ced_csmarketplace_product_mail_to_admin" instance="Ced\CsMarketplace\Helper\Mail"
+             method="sendProductMailToAdmin">
+            <schedule>0 0 * * *</schedule>
+        </job>
+    </group>
+</config>

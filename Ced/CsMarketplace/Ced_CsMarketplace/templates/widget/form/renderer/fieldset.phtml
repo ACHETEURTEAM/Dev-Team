@@ -1,0 +1,38 @@
+<?php
+
+
+// @codingStandardsIgnoreFile
+?>
+<?php $_element = $this->getElement() ?>
+<?php if ($_element->getFieldsetContainerId()): ?>
+<div id="<?= $_element->getFieldsetContainerId(); ?>">
+<?php endif; ?>
+<div class="fieldset">
+<?php if ($_element->getLegend()): ?>
+    <h2 class="legend"><?= $_element->getLegend() ?></h2>
+<?php endif; ?>
+<?php if (!$_element->getNoContainer()): ?>
+    <ul class="form-list <?= $_element->getClass() ?>" id="<?= $_element->getHtmlId() ?>">
+<?php endif; ?>
+    <div class="hor-scroll">
+        <?php if ($_element->getComment()): ?>
+            <p class="comment"><?= $this->escapeHtml($_element->getComment()) ?></p>
+        <?php endif; ?>
+        <?php if ($_element->hasHtmlContent()): ?>
+            <?= $_element->getHtmlContent(); ?>
+        <?php else: ?>
+        <table cellspacing="0" class="<?= $_element->hasTableClass() ? $_element->getTableClass() : 'form-list'?>">
+            <tbody>
+                <?= $_element->getChildrenHtml(); ?>
+            </tbody>
+        </table>
+        <?php endif; ?>
+    </div>
+    <?= $_element->getSubFieldsetHtml() ?>
+<?php if (!$_element->getNoContainer()): ?>
+    </ul>
+<?php endif; ?>
+</div>
+<?php if ($_element->getFieldsetContainerId()): ?>
+</div>
+<?php endif; ?>

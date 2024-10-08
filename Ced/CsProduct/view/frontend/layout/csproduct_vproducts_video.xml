@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+ 
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="vendor.dashboard.wrapper">
+            <!-- <block class="Ced\CsProduct\Block\Product\Edit\NewVideo" name="new-video" template="Magento_ProductVideo::product/edit/slideout/form.phtml"/> -->
+        </referenceContainer>
+    </body>
+</page>

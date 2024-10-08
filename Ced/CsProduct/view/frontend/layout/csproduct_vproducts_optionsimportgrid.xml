@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+ 
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <container name="root" label="Root">
+        <block name="require.js" class="Ced\CsMarketplace\Block\Page\RequireJs"
+               template="Magento_Backend::page/js/require_js.phtml"/>
+        <block class="Ced\CsProduct\Block\Product\Edit\Tab\Options\Popup\Grid"
+               name="csproduct.vproducts.import.custom.options"/>
+    </container>
+</layout>

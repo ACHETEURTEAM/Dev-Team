@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+      <body>
+    	<referenceContainer name="sidebar.additional">
+			 <block class="Ced\CsVendorReview\Block\Vshops\View"
+              name="csmarketplace_vshops_view_rating" cacheable="false" after="csmarketplace_vshops_view" template="Ced_CsVendorReview::vshops/view.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

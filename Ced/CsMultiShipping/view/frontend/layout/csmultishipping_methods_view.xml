@@ -1,0 +1,18 @@
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="vendorpanel"
+      xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<update handle="csmarketplace_vendor"/>
+
+    <body>
+        <referenceBlock name="vendor.dashboard.wrapper">
+            <block class="Ced\CsMultiShipping\Block\Vsettings\Shipping\Methods" name="csmultishipping.methods"
+                   template="Ced_CsMultiShipping::vsettings/methods.phtml" cacheable="false">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Ced\CsMultiShipping\ViewModel\TaxHelper</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Ced\CsMarketplace\Model\Vorders" type="Ced\CsOrder\Model\Vorders"/>
+    <type name="Ced\CsMarketplace\Ui\Component\Listing\Columns\Vorders\View">
+        <plugin name="csorder_view_path_Plugin" type="Ced\CsOrder\Ui\Component\Listing\Columns\Vorders\ViewPlugin"
+                sortOrder="10" disabled="false" />
+    </type>
+</config>

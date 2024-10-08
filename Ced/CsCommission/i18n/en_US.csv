@@ -1,0 +1,48 @@
+"Category Wise Commission","Category Wise Commission"
+"Add Commission","Add Commission"
+Save,Save
+Delete,Delete
+"Save and Continue Edit","Save and Continue Edit"
+"Edit Item '%1'","Edit Item '%1'"
+"New Item","New Item"
+Commission,Commission
+Category,Category
+"Calculation Method","Calculation Method"
+"Commission Fee","Commission Fee"
+Priority,Priority
+"Commission Information","Commission Information"
+ID,ID
+Vendor,Vendor
+Method,Method
+Fee,Fee
+"Created At","Created At"
+"Are you sure?","Are you sure?"
+"Commission Configuration","Commission Configuration"
+"No Configurations are Available for Current Configuration Scope.
+                Please Up the Configuration Scope by One Level.","No Configurations are Available for Current Configuration Scope.
+                Please Up the Configuration Scope by One Level."
+"Vendor Information","Vendor Information"
+"Payment Details","Payment Details"
+"Vendor Products","Vendor Products"
+"Vendor Orders","Vendor Orders"
+"Vendor Transactions","Vendor Transactions"
+"Commission Configurations","Commission Configurations"
+"Add New Rate","Add New Rate"
+Fixed,Fixed
+Percentage,Percentage
+"Product Types","Product Types"
+"Delete successfully !","Delete successfully !"
+"This row no longer exists.","This row no longer exists."
+"Please select product(s).","Please select product(s)."
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"The Commission Has been Saved.","The Commission Has been Saved."
+"Something went wrong while saving the Commission.","Something went wrong while saving the Commission."
+max(),max()
+min(),min()
+"Something went wrong while saving this configuration:","Something went wrong while saving this configuration:"
+"Calculate Commission Fee","Calculate Commission Fee"
+"Default Calculation Method","Default Calculation Method"
+"Default Commission Fee","Default Commission Fee"
+"Product Type Wise","Product Type Wise"
+"Condition Function","Condition Function"
+"Category Wise","Category Wise"

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- 
+
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="vendorpanel" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<update handle="csmarketplace_vendor"/>
+    <body>
+    	<referenceBlock name="vendor.dashboard.wrapper" >
+            <block class="Ced\CsUpsShipping\Block\Backend\System\CarrierConfig" name="csmultishipping.methods1" template="Ced_CsUpsShipping::upsshipping/ups.phtml" cacheable="false">            
+			</block>
+        </referenceBlock>
+    </body>
+</page>

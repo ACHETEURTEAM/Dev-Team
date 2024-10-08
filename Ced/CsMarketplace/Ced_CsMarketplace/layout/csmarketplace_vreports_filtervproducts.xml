@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <container name="root" label="Root">
+       <block class="Ced\CsMarketplace\Block\Vreports\Vproducts\ListOrders" name="csmarketplace_report_vproducts3" as="productReport3.list" template="Ced_CsMarketplace::vreports/vproducts/list.phtml" cacheable="false" />
+    </container>
+</layout>
