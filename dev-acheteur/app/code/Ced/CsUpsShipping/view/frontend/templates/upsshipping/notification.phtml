@@ -1,0 +1,22 @@
+<?php
+
+
+?>
+<?php
+$key = 'shipping/ups/is_ups_xml';
+$saved_ups_xml = $this->helper('Ced\CsMultiShipping\Helper\Data')->getConfigValue($key, $this->customerSession->getVendorId());
+$is_ups_xml = $this->_scopeConfig->getValue('carriers/ups/type', \Magento\Store\Model\ScopeInterface::SCOPE_STORE) == "UPS_XML" ? 1 : 0;
+?>
+<?php if ($is_ups_xml != $saved_ups_xml) { ?>
+    <li>
+        <a href="<?php echo $this->getUrl('csmultishipping/methods/index/') ?>"
+           title="<?php echo __('Resetup UPS Shipping Method') ?>">
+            <div>
+                <i class="fa fa-bell fw"></i>
+                <?php echo __('Resetup UPS Shipping Method') ?>
+                <span class="pull-right text-muted small">..</span>
+            </div>
+        </a>
+    </li>
+    <li class="divider"></li>
+<?php } ?>

@@ -1,0 +1,15 @@
+{
+    "name": "ced/marketplace-basic",
+    "description": "Extension which will convert your magento 2 store in to multi-vendor marketplace.",
+    "require": {
+        "php": "~7.3.0|~7.4.0",
+        "magento/magento-composer-installer": "*",
+        "ced/module-csmarketplace": "*",
+        "ced/theme-csmarketplace": "*"
+    },
+    "type": "metapackage",
+    "version": "6.0.48",
+    "license": [
+        "EULA"
+    ]
+}

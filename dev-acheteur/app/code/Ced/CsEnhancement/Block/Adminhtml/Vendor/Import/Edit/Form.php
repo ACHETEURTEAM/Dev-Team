@@ -1,0 +1,80 @@
+<?php
+
+namespace Ced\CsEnhancement\Block\Adminhtml\Vendor\Import\Edit;
+
+/**
+ * Class Form
+ * @package Ced\CsEnhancement\Block\Adminhtml\Vendor\Import\Edit
+ */
+class Form extends \Magento\Backend\Block\Widget\Form\Generic
+{
+
+    /**
+     * @return \Magento\Backend\Block\Widget\Form\Generic
+     * @throws \Magento\Framework\Exception\LocalizedException
+     */
+    protected function _prepareForm()
+    {
+        /** @var \Magento\Framework\Data\Form $form */
+        $form = $this->_formFactory->create(
+            [
+                'data' => [
+                    'id' => 'edit_form',
+                    'method' => 'post',
+                    'enctype' => 'multipart/form-data',
+                ],
+            ]
+        );
+
+        // base fieldset
+        $fieldsets['base'] = $form->addFieldset('base_fieldset', ['legend' => __('Import Settings')]);
+
+        $fieldsets['base']->addField(
+            'file_type',
+            'label',
+            [
+                'name' => 'file_type',
+                'title' => __('File Type'),
+                'label' => __('File Type'),
+                'value' => __('CSV')
+            ]
+        );
+
+        $fieldsets['base']->addField(
+            'required_attribute',
+            'hidden',
+            [
+                'name' => 'required_attribute',
+                'class' => 'import_data',
+            ]
+        );
+
+        $fieldsets['base']->addField(
+            'unique_attribute',
+            'hidden',
+            [
+                'name' => 'unique_attribute',
+                'class' => 'import_data',
+            ]
+        );
+
+        $fieldsets['upload'] = $form->addFieldset('upload_file_fieldset', ['legend' => __('File to Import')]);
+
+        // add field with use file-uploader
+        $fieldsets['upload']->addField(
+            'import_csv_file',
+            'file',
+            [
+                'name' => 'import_csv_file',
+                'label' => __('Select File to Import'),
+                'title' => __('Select File to Import'),
+                'required' => true,
+                'after_element_html' => '<div id="upload_output"></div>'
+            ]
+        );
+        $form->setUseContainer(true);
+        $this->setForm($form);
+
+        return parent::_prepareForm();
+    }
+}

@@ -1,0 +1,37 @@
+"Assign products","Assign products"
+"Assign Selected Product(s) to Vendor","Assign Selected Product(s) to Vendor"
+Remove,Remove
+"Are you sure?","Are you sure?"
+ID,ID
+Name,Name
+"Name in %1","Name in %1"
+Type,Type
+"Attribute Set","Attribute Set"
+SKU,SKU
+Price,Price
+Quantity,Quantity
+Status,Status
+Websites,Websites
+"Are you sure you want to remove this product from vendor?","Are you sure you want to remove this product from vendor?"
+Delete,Delete
+"Change status","Change status"
+"You can assign only","You can assign only"
+"products to vendor","products to vendor"
+"Vendors Product limit has Exceeded","Vendors Product limit has Exceeded"
+"Product(s) Assigned Successfully.","Product(s) Assigned Successfully."
+"Please select product to assign.","Please select product to assign."
+"You can not assign products.","You can not assign products."
+"Please select product(s).","Please select product(s)."
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"Please select products(s).","Please select products(s)."
+"Status changed Successfully","Status changed Successfully"
+"Can't process approval/disapproval for some products.Some of Product's
+                        vendor(s) are disapproved or not exist.","Can't process approval/disapproval for some products.Some of Product's
+                        vendor(s) are disapproved or not exist."
+%1,%1
+"Product(s) was successfully removed from vendor","Product(s) was successfully removed from vendor"
+"Product is successfully removed from vendor","Product is successfully removed from vendor"
+"Please select product(s)","Please select product(s)"
+"Vendor Products","Vendor Products"
+General,General
+"Enable Product Assignment","Enable Product Assignment"

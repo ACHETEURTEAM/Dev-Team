@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<update handle="csmarketplace_vendor"/>
+    <body>
+    	<referenceBlock name="vendor.dashboard.wrapper" >
+            <block class="Ced\CsMarketplace\Block\Vendor\Profile\Edit" name="vendor_profile_edit" template="Ced_CsMarketplace::vendor/profile/edit.phtml" cacheable="false"/>
+        </referenceBlock>
+    </body>
+</page>

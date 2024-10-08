@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Ced_CsMarketplace::bower_components/font-awesome/css/font-awesome.min.css"/>
+        <css src="Ced_CsMarketplace::css/shoppage.css" />
+    </head>
+    <body>
+        <referenceContainer name="sidebar.main" >
+    		<referenceBlock name="wishlist_sidebar" remove="true"/>
+    		<referenceBlock name="catalog.compare.sidebar" remove="true"/>
+            <!-- Recently order -->
+            <referenceBlock name="sale.reorder.sidebar" remove="true" />
+           	<block class="Magento\Framework\View\Element\Template" name="country_filter"
+                   as="country_filter" before="-"
+                   template="Ced_CsMarketplace::vshops/country_filter.phtml" />
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Ced\CsMarketplace\Block\Vshops\ListBlock" name="vendors.homepage.list"
+                   template="Ced_CsMarketplace::vshops/list.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>

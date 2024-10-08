@@ -1,0 +1,16 @@
+<?php 
+
+// @codingStandardsIgnoreFile
+?>
+<div class="row">
+	<div class="col-md-12 ced-transactions-details" style="margin-top:10px;"> 
+		<?= $block->getFormHtml(); ?> 
+	</div>
+	<p class="back-link" >
+		<a class="back-link" 
+			href="<?= $block->escapeUrl($block->getBackUrl()) ?>">
+				<small>&laquo; </small>
+				<?php echo __('Back') ?>
+		</a>
+	</p>
+</div>

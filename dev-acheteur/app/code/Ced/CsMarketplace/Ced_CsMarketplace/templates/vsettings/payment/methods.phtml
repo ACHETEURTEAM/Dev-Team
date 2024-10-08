@@ -1,0 +1,21 @@
+<?php
+
+
+
+?>
+
+<h3 class="legend" style="color:#23527C;"><?= /* @noEscape */ __('Payment Method Information') ?></h3>
+<?= /* @noEscape */ $block->getFormHtml(); ?>
+<div class="buttons-set">
+    <p class="required"><?= /* @noEscape */ __('* Required Fields') ?></p>
+    <p class="back-link"><a href="<?= /* @noEscape */ $block->escapeUrl($block->getBackUrl()) ?>"><small>&laquo; </small><?= /* @noEscape */ __('Back') ?></a></p>
+</div>
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+    var dataForm = $('#form-validate');
+    dataForm.mage('validation', {});
+});
+</script>

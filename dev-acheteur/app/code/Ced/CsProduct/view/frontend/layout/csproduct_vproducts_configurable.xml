@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+ 
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Ced_CsProduct::css/configurable-product.css"/>
+        <!-- catalog_product_new layout of config product -->
+        <css src="Ced_CsProduct::configurable/product/product.css"/>
+        <!-- catalog_product_new layout of config product -->
+    </head>
+    <update handle="csproduct_vproducts_superconfig_config"/>
+    <body>
+        <referenceBlock name="product_tabs">
+            <action method="removeTab">
+                <argument name="name" xsi:type="string">advanced-pricing</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_invoice_save_commit_after">
+        <observer name="Ced_CsTransaction_Sales_Order_Invoice_Save_After"
+                  instance="Ced\CsTransaction\Observer\PrepareItemsForPayment" shared="false" />
+    </event>
+    <event name="sales_order_creditmemo_save_after">
+        <observer name="Ced_CsOrder_Creditmemo_Create"
+                  instance="Ced\CsTransaction\Observer\PrepareItemsForRefund" shared="false" />
+    </event>
+    <event name="csmarketplace_vpayments_save_after">
+        <observer name="Ced_CsTransaction_Vpayments_Save_After"
+                  instance="Ced\CsTransaction\Observer\VpaymentsSaveAfter" shared="false" />
+    </event>
+</config>

@@ -1,0 +1,31 @@
+<?php
+
+
+
+// @codingStandardsIgnoreFile
+?>
+<?php 
+    $products=$block->getProducts();
+?>
+<table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;" summary="<?= __('Products') ?>">
+    <thead>
+        <tr>
+            <th align="left" bgcolor="#EAEAEA"
+				style="font-size: 13px; padding: 3px 9px"><?= __('Product Name') ?></th>
+            <th  align="left" bgcolor="#EAEAEA"
+				style="font-size: 13px; padding: 3px 9px"><?= __('SKU') ?></th>
+        </tr>
+    </thead>
+    <tbody bgcolor="#F6F6F6">
+    <?php $i=0;?>
+        <?php foreach ($products[1] as $key=>$product): ?>
+
+            <tr  align="left" 
+				style="font-size: 13px; padding: 3px 9px" <?= $i%2 ? ' bgcolor="#EAEAEA"' : '#F6F6F6' ?> class="border">
+                <td class="number"><?= $product->getName();?></td>
+                <td class="number"><?= $product->getSku();?></td>
+            </tr>
+            <?php $i++;?>
+        <?php endforeach; ?>
+   	</tbody>
+</table>

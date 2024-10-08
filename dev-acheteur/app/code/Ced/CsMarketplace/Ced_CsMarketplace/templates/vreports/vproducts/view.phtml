@@ -1,0 +1,23 @@
+<?php
+
+// @codingStandardsIgnoreFile
+?>
+<div class="row">
+	<div class="col-md-12" style="margin-top:10px;">
+		<div class="panel panel-default">
+			<div class="panel-heading col-md-12" style="text-transform: uppercase;font-weight:bold;padding:4px 15px;">
+				<div  style="line-height:31px;font-size:17px;display:inline;text-transform: uppercase;">
+					<?= __('Products Report') ?>  
+				</div>
+			</div>
+			<div class="panel-body">
+				<?= $this->getChildHtml('vproductsReport2.list') ?>
+				<br/>
+				<br/>
+				<div class="col-md-12" id="csmarketplace-vreports-vproducts">
+					<?= $this->getChildHtml('vproductsReport3.list') ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="ced_csmarketplace_custom_vendor_save">
+       <observer name="Ced_CsCommission_Observer_VendorSave" instance="Ced\CsCommission\Observer\VendorSave" shared="true" />
+    </event>
+    <event name="csmarketplace_adminhtml_vendor_entity_edit_tabs">
+       <observer name="Ced_CsCommission_Observer_CustomTab" instance="Ced\CsCommission\Observer\AddCommissionTab" shared="true" />
+    </event>
+</config>

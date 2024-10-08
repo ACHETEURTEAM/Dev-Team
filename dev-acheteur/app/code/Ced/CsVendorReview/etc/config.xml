@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+  <default>
+     <ced_csmarketplace>
+         <vendorreview>
+            <activation>1</activation>
+            <vendorapprval>1</vendorapprval>
+            <purchase_enable>1</purchase_enable>
+         </vendorreview>
+      </ced_csmarketplace>
+  </default>
+</config>

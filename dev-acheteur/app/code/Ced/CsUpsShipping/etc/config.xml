@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+ <default>
+    <ced_csmultishipping>
+      <shipping>
+        <methods>
+          <ups>
+            <model>Ced\CsUpsShipping\Model\Vsettings\Shipping\Methods\Ups</model>
+            <config_path>ced_csupsshipping/general/active</config_path>
+          </ups>
+        </methods>
+      </shipping>
+    </ced_csmultishipping>
+        <carriers>
+            <ups>
+                <active>1</active>
+                 <title>Vendor UPS Shipping</title>
+                <name>Vendor UPS Shipping</name>
+                <specificerrmsg>This Shipping is currently unavailable</specificerrmsg>
+                <model>Ced\CsUpsShipping\Model\Carrier\Ups</model>
+            </ups>
+        </carriers>
+        <ced_csupsshipping>
+          <general>
+            <active>1</active>
+          </general>
+        </ced_csupsshipping>
+    </default>
+</config>

@@ -1,0 +1,8 @@
+<?php
+
+
+
+?>
+<div class="input-box">
+    <input placeholder="<?= /* @noEscape */ __('Tax/VAT number') ?>" type="text" id="<?= /* @noEscape */ $block->getFieldId('taxvat')?>" name="<?= /* @noEscape */ $block->getFieldName('taxvat')?>" value="<?= /* @noEscape */ $block->htmlEscape($block->getTaxvat()) ?>" title="<?= /* @noEscape */ __('Tax/VAT number') ?>" class="form-control input-text<?php if ($block->isRequired()):?> required-entry<?php endif; ?>" <?= /* @noEscape */ $block->getFieldParams() ?> />
+</div>

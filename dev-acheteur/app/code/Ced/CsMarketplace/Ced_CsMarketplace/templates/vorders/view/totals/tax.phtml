@@ -1,0 +1,19 @@
+<?php
+
+
+
+?>
+<?php
+$vorder = $block->getCurrentVorder();
+if ($vorder && $vorder->getBaseTaxAmount()) { ?>
+<tr>
+    <td class="a-right" colspan="9">
+        <div class="summary-collapse">
+            <?= /* @noEscape */ __('Tax') ?>
+        </div>
+    </td>
+    <td class="a-right last">
+        <?= /* @noEscape */ $block->displayAmount($vorder->getPurchaseTaxAmount(), $vorder->getBaseTaxAmount()); ?>
+    </td>
+    <?php } ?>
+</tr>

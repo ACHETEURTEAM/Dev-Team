@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Ced\CsEnhancement\Block\Adminhtml\Vendor\Import\Edit\Before" template="Ced_CsEnhancement::vendor/import/before.phtml" name="csenhancement.import.before.form" as="before_form"/>
+            <block class="Ced\CsEnhancement\Block\Adminhtml\Vendor\Import\Edit" name="csenhancement.import.form"/>
+        </referenceContainer>
+    </body>
+</page>

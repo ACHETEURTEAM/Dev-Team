@@ -1,0 +1,11 @@
+"We can't convert a rate from ""%1-%2"".","We can't convert a rate from ""%1-%2""."
+"Cannot retrieve shipping rates","Cannot retrieve shipping rates"
+Yes,Yes
+No,No
+"Please ensure you have selected right Origin of Shipment according to your Shipping Origin Address otherwise your Shipping Methods will not be visible in Checkout.","Please ensure you have selected right Origin of Shipment according to your Shipping Origin Address otherwise your Shipping Methods will not be visible in Checkout."
+UPS,UPS
+"Origin of the Shipment","Origin of the Shipment"
+"Allowed Methods","Allowed Methods"
+"Weight Unit","Weight Unit"
+"Resetup UPS Shipping Method","Resetup UPS Shipping Method"
+"Enable Vendor UPS Shipping","Enable Vendor UPS Shipping"

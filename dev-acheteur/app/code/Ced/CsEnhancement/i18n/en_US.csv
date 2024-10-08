@@ -1,0 +1,21 @@
+"Import Vendors","Import Vendors"
+Import,Import
+"Export Csv Format","Export Csv Format"
+"Check Data","Check Data"
+"Import Settings","Import Settings"
+"File Type","File Type"
+CSV,CSV
+"File to Import","File to Import"
+"Select File to Import","Select File to Import"
+Marketplace,Marketplace
+"Invalid Data Supplied","Invalid Data Supplied"
+"Error Occurred in row %1 : value for %2 is required","Error Occurred in row %1 : value for %2 is required"
+"Error Occurred in row %1 : value for %2 already exist","Error Occurred in row %1 : value for %2 already exist"
+"Error Occurred in row %1 : Invalid value provided for %2","Error Occurred in row %1 : Invalid value provided for %2"
+"Error Occurred in row %1 : ","Error Occurred in row %1 : "
+"An error occurred while saving vendor on row %1.","An error occurred while saving vendor on row %1."
+"Error Occurred in row : %1","Error Occurred in row : %1"
+"A total of %1 record(s) has been successfully imported","A total of %1 record(s) has been successfully imported"
+"Make sure your file isn't more than %1 MB.","Make sure your file isn't more than %1 MB."
+"The csv file has been uploaded successfully. ","The csv file has been uploaded successfully. "
+"Bulk Vendor Create Enable","Bulk Vendor Create Enable"

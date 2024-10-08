@@ -1,0 +1,952 @@
+[2024-10-07T19:50:04.840869+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Ced_CsMarketplace schema: current version - none, required version - 5.0.1
+Ced_CsMarketplace data: current version - none, required version - 5.0.1
+Ced_CsEnhancement schema: current version - none, required version - 0.0.2
+Ced_CsEnhancement data: current version - none, required version - 0.0.2
+Ced_CsCommission schema: current version - none, required version - 0.0.6
+Ced_CsCommission data: current version - none, required version - 0.0.6
+Ced_CsMultiShipping schema: current version - none, required version - 1.0.5
+Ced_CsMultiShipping data: current version - none, required version - 1.0.5
+Ced_CsTransaction schema: current version - none, required version - 1.0.6
+Ced_CsTransaction data: current version - none, required version - 1.0.6
+Ced_CsProAssign schema: current version - none, required version - 0.0.2
+Ced_CsProAssign data: current version - none, required version - 0.0.2
+Ced_CsProduct schema: current version - none, required version - 0.0.3
+Ced_CsProduct data: current version - none, required version - 0.0.3
+Ced_CsOrder schema: current version - none, required version - 2.0.6
+Ced_CsOrder data: current version - none, required version - 2.0.6
+Ced_CsUpsShipping schema: current version - none, required version - 1.0.0
+Ced_CsUpsShipping data: current version - none, required version - 1.0.0
+Ced_CsVendorProductAttribute schema: current version - none, required version - 0.0.4
+Ced_CsVendorProductAttribute data: current version - none, required version - 0.0.4
+Ced_CsVendorReview schema: current version - none, required version - 1.0.5
+Ced_CsVendorReview data: current version - none, required version - 1.0.5
+Ced_VendorsocialLogin schema: current version - none, required version - 0.0.2
+Ced_VendorsocialLogin data: current version - none, required version - 0.0.2
+Ecomteck_Core schema: current version - none, required version - 1.0.0
+Ecomteck_Core data: current version - none, required version - 1.0.0
+Ecomteck_DeliveryDate schema: current version - none, required version - 2.0.2
+Ecomteck_DeliveryDate data: current version - none, required version - 2.0.2
+Ecomteck_OneStepCheckout schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckout data: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible data: current version - none, required version - 1.0.0
+Ecomteck_OrderComment schema: current version - none, required version - 0.0.1
+Ecomteck_OrderComment data: current version - none, required version - 0.0.1
+Mageplaza_Core schema: current version - none, required version - 1.0.0
+Mageplaza_Core data: current version - none, required version - 1.0.0
+Mageplaza_SocialLogin schema: current version - none, required version - 1.2.1
+Mageplaza_SocialLogin data: current version - none, required version - 1.2.1
+Magiccart_Magicmenu schema: current version - none, required version - 2.0
+Magiccart_Magicmenu data: current version - none, required version - 2.0 in /var/www/html/dev-acheteur/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83
+Stack trace:
+#0 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(121): Magento\Framework\Module\Plugin\DbStatusValidator->beforeDispatch()
+#1 /var/www/html/dev-acheteur/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#2 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#3 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#4 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#5 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#6 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#7 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#8 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#9 {main} {"report_id":"845267250867cf79cb7aeb83ef939c0ad61cf775095190689d16f1c45482572c","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+Ced_CsMarketplace schema: current version - none, required version - 5.0.1
+Ced_CsMarketplace data: current version - none, required version - 5.0.1
+Ced_CsEnhancement schema: current version - none, required version - 0.0.2
+Ced_CsEnhancement data: current version - none, required version - 0.0.2
+Ced_CsCommission schema: current version - none, required version - 0.0.6
+Ced_CsCommission data: current version - none, required version - 0.0.6
+Ced_CsMultiShipping schema: current version - none, required version - 1.0.5
+Ced_CsMultiShipping data: current version - none, required version - 1.0.5
+Ced_CsTransaction schema: current version - none, required version - 1.0.6
+Ced_CsTransaction data: current version - none, required version - 1.0.6
+Ced_CsProAssign schema: current version - none, required version - 0.0.2
+Ced_CsProAssign data: current version - none, required version - 0.0.2
+Ced_CsProduct schema: current version - none, required version - 0.0.3
+Ced_CsProduct data: current version - none, required version - 0.0.3
+Ced_CsOrder schema: current version - none, required version - 2.0.6
+Ced_CsOrder data: current version - none, required version - 2.0.6
+Ced_CsUpsShipping schema: current version - none, required version - 1.0.0
+Ced_CsUpsShipping data: current version - none, required version - 1.0.0
+Ced_CsVendorProductAttribute schema: current version - none, required version - 0.0.4
+Ced_CsVendorProductAttribute data: current version - none, required version - 0.0.4
+Ced_CsVendorReview schema: current version - none, required version - 1.0.5
+Ced_CsVendorReview data: current version - none, required version - 1.0.5
+Ced_VendorsocialLogin schema: current version - none, required version - 0.0.2
+Ced_VendorsocialLogin data: current version - none, required version - 0.0.2
+Ecomteck_Core schema: current version - none, required version - 1.0.0
+Ecomteck_Core data: current version - none, required version - 1.0.0
+Ecomteck_DeliveryDate schema: current version - none, required version - 2.0.2
+Ecomteck_DeliveryDate data: current version - none, required version - 2.0.2
+Ecomteck_OneStepCheckout schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckout data: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible data: current version - none, required version - 1.0.0
+Ecomteck_OrderComment schema: current version - none, required version - 0.0.1
+Ecomteck_OrderComment data: current version - none, required version - 0.0.1
+Mageplaza_Core schema: current version - none, required version - 1.0.0
+Mageplaza_Core data: current version - none, required version - 1.0.0
+Mageplaza_SocialLogin schema: current version - none, required version - 1.2.1
+Mageplaza_SocialLogin data: current version - none, required version - 1.2.1
+Magiccart_Magicmenu schema: current version - none, required version - 2.0
+Magiccart_Magicmenu data: current version - none, required version - 2.0 at /var/www/html/dev-acheteur/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83)"} []
+[2024-10-07T19:50:14.731372+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+Ced_CsMarketplace schema: current version - none, required version - 5.0.1
+Ced_CsMarketplace data: current version - none, required version - 5.0.1
+Ced_CsEnhancement schema: current version - none, required version - 0.0.2
+Ced_CsEnhancement data: current version - none, required version - 0.0.2
+Ced_CsCommission schema: current version - none, required version - 0.0.6
+Ced_CsCommission data: current version - none, required version - 0.0.6
+Ced_CsMultiShipping schema: current version - none, required version - 1.0.5
+Ced_CsMultiShipping data: current version - none, required version - 1.0.5
+Ced_CsTransaction schema: current version - none, required version - 1.0.6
+Ced_CsTransaction data: current version - none, required version - 1.0.6
+Ced_CsProAssign schema: current version - none, required version - 0.0.2
+Ced_CsProAssign data: current version - none, required version - 0.0.2
+Ced_CsProduct schema: current version - none, required version - 0.0.3
+Ced_CsProduct data: current version - none, required version - 0.0.3
+Ced_CsOrder schema: current version - none, required version - 2.0.6
+Ced_CsOrder data: current version - none, required version - 2.0.6
+Ced_CsUpsShipping schema: current version - none, required version - 1.0.0
+Ced_CsUpsShipping data: current version - none, required version - 1.0.0
+Ced_CsVendorProductAttribute schema: current version - none, required version - 0.0.4
+Ced_CsVendorProductAttribute data: current version - none, required version - 0.0.4
+Ced_CsVendorReview schema: current version - none, required version - 1.0.5
+Ced_CsVendorReview data: current version - none, required version - 1.0.5
+Ced_VendorsocialLogin schema: current version - none, required version - 0.0.2
+Ced_VendorsocialLogin data: current version - none, required version - 0.0.2
+Ecomteck_Core schema: current version - none, required version - 1.0.0
+Ecomteck_Core data: current version - none, required version - 1.0.0
+Ecomteck_DeliveryDate schema: current version - none, required version - 2.0.2
+Ecomteck_DeliveryDate data: current version - none, required version - 2.0.2
+Ecomteck_OneStepCheckout schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckout data: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible data: current version - none, required version - 1.0.0
+Ecomteck_OrderComment schema: current version - none, required version - 0.0.1
+Ecomteck_OrderComment data: current version - none, required version - 0.0.1
+Mageplaza_Core schema: current version - none, required version - 1.0.0
+Mageplaza_Core data: current version - none, required version - 1.0.0
+Mageplaza_SocialLogin schema: current version - none, required version - 1.2.1
+Mageplaza_SocialLogin data: current version - none, required version - 1.2.1
+Magiccart_Magicmenu schema: current version - none, required version - 2.0
+Magiccart_Magicmenu data: current version - none, required version - 2.0 in /var/www/html/dev-acheteur/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83
+Stack trace:
+#0 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(121): Magento\Framework\Module\Plugin\DbStatusValidator->beforeDispatch()
+#1 /var/www/html/dev-acheteur/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#2 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#3 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#4 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#5 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#6 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#7 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#8 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#9 {main} {"report_id":"845267250867cf79cb7aeb83ef939c0ad61cf775095190689d16f1c45482572c","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+Ced_CsMarketplace schema: current version - none, required version - 5.0.1
+Ced_CsMarketplace data: current version - none, required version - 5.0.1
+Ced_CsEnhancement schema: current version - none, required version - 0.0.2
+Ced_CsEnhancement data: current version - none, required version - 0.0.2
+Ced_CsCommission schema: current version - none, required version - 0.0.6
+Ced_CsCommission data: current version - none, required version - 0.0.6
+Ced_CsMultiShipping schema: current version - none, required version - 1.0.5
+Ced_CsMultiShipping data: current version - none, required version - 1.0.5
+Ced_CsTransaction schema: current version - none, required version - 1.0.6
+Ced_CsTransaction data: current version - none, required version - 1.0.6
+Ced_CsProAssign schema: current version - none, required version - 0.0.2
+Ced_CsProAssign data: current version - none, required version - 0.0.2
+Ced_CsProduct schema: current version - none, required version - 0.0.3
+Ced_CsProduct data: current version - none, required version - 0.0.3
+Ced_CsOrder schema: current version - none, required version - 2.0.6
+Ced_CsOrder data: current version - none, required version - 2.0.6
+Ced_CsUpsShipping schema: current version - none, required version - 1.0.0
+Ced_CsUpsShipping data: current version - none, required version - 1.0.0
+Ced_CsVendorProductAttribute schema: current version - none, required version - 0.0.4
+Ced_CsVendorProductAttribute data: current version - none, required version - 0.0.4
+Ced_CsVendorReview schema: current version - none, required version - 1.0.5
+Ced_CsVendorReview data: current version - none, required version - 1.0.5
+Ced_VendorsocialLogin schema: current version - none, required version - 0.0.2
+Ced_VendorsocialLogin data: current version - none, required version - 0.0.2
+Ecomteck_Core schema: current version - none, required version - 1.0.0
+Ecomteck_Core data: current version - none, required version - 1.0.0
+Ecomteck_DeliveryDate schema: current version - none, required version - 2.0.2
+Ecomteck_DeliveryDate data: current version - none, required version - 2.0.2
+Ecomteck_OneStepCheckout schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckout data: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible schema: current version - none, required version - 1.0.0
+Ecomteck_OneStepCheckoutCompatible data: current version - none, required version - 1.0.0
+Ecomteck_OrderComment schema: current version - none, required version - 0.0.1
+Ecomteck_OrderComment data: current version - none, required version - 0.0.1
+Mageplaza_Core schema: current version - none, required version - 1.0.0
+Mageplaza_Core data: current version - none, required version - 1.0.0
+Mageplaza_SocialLogin schema: current version - none, required version - 1.2.1
+Mageplaza_SocialLogin data: current version - none, required version - 1.2.1
+Magiccart_Magicmenu schema: current version - none, required version - 2.0
+Magiccart_Magicmenu data: current version - none, required version - 2.0 at /var/www/html/dev-acheteur/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83)"} []
+[2024-10-07T20:00:47.509142+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:01:05.479772+00:00] main.CRITICAL: InvalidArgumentException: Plugin class Mageplaza\Core\Plugin\MoveMenu doesn't exist in /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginListGenerator.php:324
+Stack trace:
+#0 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginListGenerator.php(291): Magento\Framework\Interception\PluginListGenerator->inheritPlugins()
+#1 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginList/PluginList.php(148): Magento\Framework\Interception\PluginListGenerator->inheritPlugins()
+#2 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginList/PluginList.php(192): Magento\Framework\Interception\PluginList\PluginList->_inheritPlugins()
+#3 /var/www/html/dev-acheteur/generated/code/Magento/Backend/Model/Menu/Builder/Command/Add/Interceptor.php(31): Magento\Framework\Interception\PluginList\PluginList->getNext()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Builder.php(42): Magento\Backend\Model\Menu\Builder\Command\Add\Interceptor->getId()
+#5 /var/www/html/dev-acheteur/generated/code/Magento/Backend/Model/Menu/Builder/Interceptor.php(23): Magento\Backend\Model\Menu\Builder->processCommand()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Director/Director.php(54): Magento\Backend\Model\Menu\Builder\Interceptor->processCommand()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Config.php(148): Magento\Backend\Model\Menu\Director\Director->direct()
+#8 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Config.php(116): Magento\Backend\Model\Menu\Config->_initMenu()
+#9 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Url.php(365): Magento\Backend\Model\Menu\Config->getMenu()
+#10 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Url.php(325): Magento\Backend\Model\Url->_getMenu()
+#11 /var/www/html/dev-acheteur/vendor/magento/module-backend/App/Action/Plugin/Authentication.php(232): Magento\Backend\Model\Url->getStartupPageUrl()
+#12 /var/www/html/dev-acheteur/vendor/magento/module-backend/App/Action/Plugin/Authentication.php(160): Magento\Backend\App\Action\Plugin\Authentication->_redirectIfNeededAfterLogin()
+#13 /var/www/html/dev-acheteur/vendor/magento/module-backend/App/Action/Plugin/Authentication.php(127): Magento\Backend\App\Action\Plugin\Authentication->_processNotLoggedInUser()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch()
+#15 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Backend\Controller\Adminhtml\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/dev-acheteur/generated/code/Magento/Backend/Controller/Adminhtml/Index/Index/Interceptor.php(32): Magento\Backend\Controller\Adminhtml\Index\Index\Interceptor->___callPlugins()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/App/FrontController.php(245): Magento\Backend\Controller\Adminhtml\Index\Index\Interceptor->dispatch()
+#18 /var/www/html/dev-acheteur/vendor/magento/framework/App/FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/App/FrontController.php(146): Magento\Framework\App\FrontController->processRequest()
+#20 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#27 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#28 {main} {"exception":"[object] (InvalidArgumentException(code: 0): Plugin class Mageplaza\\Core\\Plugin\\MoveMenu doesn't exist at /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginListGenerator.php:324)"} []
+[2024-10-07T20:01:05.481255+00:00] main.CRITICAL: InvalidArgumentException: Plugin class Mageplaza\Core\Plugin\MoveMenu doesn't exist in /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginListGenerator.php:324
+Stack trace:
+#0 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginListGenerator.php(291): Magento\Framework\Interception\PluginListGenerator->inheritPlugins()
+#1 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginList/PluginList.php(148): Magento\Framework\Interception\PluginListGenerator->inheritPlugins()
+#2 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginList/PluginList.php(192): Magento\Framework\Interception\PluginList\PluginList->_inheritPlugins()
+#3 /var/www/html/dev-acheteur/generated/code/Magento/Backend/Model/Menu/Builder/Command/Add/Interceptor.php(31): Magento\Framework\Interception\PluginList\PluginList->getNext()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Builder.php(42): Magento\Backend\Model\Menu\Builder\Command\Add\Interceptor->getId()
+#5 /var/www/html/dev-acheteur/generated/code/Magento/Backend/Model/Menu/Builder/Interceptor.php(23): Magento\Backend\Model\Menu\Builder->processCommand()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Director/Director.php(54): Magento\Backend\Model\Menu\Builder\Interceptor->processCommand()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Config.php(148): Magento\Backend\Model\Menu\Director\Director->direct()
+#8 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Menu/Config.php(116): Magento\Backend\Model\Menu\Config->_initMenu()
+#9 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Url.php(365): Magento\Backend\Model\Menu\Config->getMenu()
+#10 /var/www/html/dev-acheteur/vendor/magento/module-backend/Model/Url.php(325): Magento\Backend\Model\Url->_getMenu()
+#11 /var/www/html/dev-acheteur/vendor/magento/module-backend/App/Action/Plugin/Authentication.php(232): Magento\Backend\Model\Url->getStartupPageUrl()
+#12 /var/www/html/dev-acheteur/vendor/magento/module-backend/App/Action/Plugin/Authentication.php(160): Magento\Backend\App\Action\Plugin\Authentication->_redirectIfNeededAfterLogin()
+#13 /var/www/html/dev-acheteur/vendor/magento/module-backend/App/Action/Plugin/Authentication.php(127): Magento\Backend\App\Action\Plugin\Authentication->_processNotLoggedInUser()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Backend\App\Action\Plugin\Authentication->aroundDispatch()
+#15 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Backend\Controller\Adminhtml\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/dev-acheteur/generated/code/Magento/Backend/Controller/Adminhtml/Index/Index/Interceptor.php(32): Magento\Backend\Controller\Adminhtml\Index\Index\Interceptor->___callPlugins()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/App/FrontController.php(245): Magento\Backend\Controller\Adminhtml\Index\Index\Interceptor->dispatch()
+#18 /var/www/html/dev-acheteur/vendor/magento/framework/App/FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/App/FrontController.php(146): Magento\Framework\App\FrontController->processRequest()
+#20 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#27 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#28 {main} {"report_id":"b00d15711e59e7e27343c2eafcc5ab558e22a364c0d4614f507039f65bf5ed19","exception":"[object] (InvalidArgumentException(code: 0): Plugin class Mageplaza\\Core\\Plugin\\MoveMenu doesn't exist at /var/www/html/dev-acheteur/vendor/magento/framework/Interception/PluginListGenerator.php:324)"} []
+[2024-10-07T20:08:39.165018+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:08:52.232570+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:10:19.706756+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:10:28.422065+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:14:31.131613+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:14:31.426440+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:15:21.629025+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:17:36.357550+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:35:57.574754+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:45:52.410848+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T20:47:54.006831+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []
+[2024-10-07T21:05:48.588139+00:00] main.CRITICAL: Error: Class "GeoIp2\Database\Reader" not found in /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68
+Stack trace:
+#0 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php(83): Ecomteck\OneStepCheckout\Service\GeoService->getReader()
+#1 /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Helper/Directory/Data.php(106): Ecomteck\OneStepCheckout\Service\GeoService->getCountry()
+#2 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(720): Ecomteck\OneStepCheckout\Helper\Directory\Data->getDefaultCountry()
+#3 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(740): Magento\Paypal\Model\Config->getMerchantCountry()
+#4 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(346): Magento\Paypal\Model\Config->isMethodSupportedForCountry()
+#5 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/AbstractConfig.php(264): Magento\Paypal\Model\AbstractConfig->isMethodActive()
+#6 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Model/Config.php(644): Magento\Paypal\Model\AbstractConfig->isMethodAvailable()
+#7 /var/www/html/dev-acheteur/vendor/magento/module-paypal/Block/Bml/Banners.php(56): Magento\Paypal\Model\Config->isMethodAvailable()
+#8 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Paypal\Block\Bml\Banners->_toHtml()
+#9 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#10 /var/www/html/dev-acheteur/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#11 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(578): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#12 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(555): Magento\Framework\View\Layout->_renderBlock()
+#13 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#14 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#15 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#16 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#17 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#18 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#19 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#20 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#21 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#22 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#23 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#24 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#25 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#26 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#27 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#28 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#29 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#30 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#31 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(606): Magento\Framework\View\Layout\Interceptor->renderElement()
+#32 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(557): Magento\Framework\View\Layout->_renderContainer()
+#33 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(149): Magento\Framework\View\Layout->renderNonCachedElement()
+#34 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(510): Magento\Framework\View\Layout\Interceptor->renderNonCachedElement()
+#35 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(140): Magento\Framework\View\Layout->renderElement()
+#36 /var/www/html/dev-acheteur/vendor/magento/framework/View/Layout.php(975): Magento\Framework\View\Layout\Interceptor->renderElement()
+#37 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->getOutput()
+#38 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent()
+#39 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Layout\Interceptor->Magento\Framework\Interception\{closure}()
+#40 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Layout/Interceptor.php(347): Magento\Framework\View\Layout\Interceptor->___callPlugins()
+#41 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Page.php(260): Magento\Framework\View\Layout\Interceptor->getOutput()
+#42 /var/www/html/dev-acheteur/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#43 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#44 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#45 /var/www/html/dev-acheteur/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#46 /var/www/html/dev-acheteur/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(95): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#47 /var/www/html/dev-acheteur/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#48 /var/www/html/dev-acheteur/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#49 /var/www/html/dev-acheteur/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#50 /var/www/html/dev-acheteur/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#51 {main} {"exception":"[object] (Error(code: 0): Class \"GeoIp2\\Database\\Reader\" not found at /var/www/html/dev-acheteur/app/code/Ecomteck/OneStepCheckout/Service/GeoService.php:68)"} []

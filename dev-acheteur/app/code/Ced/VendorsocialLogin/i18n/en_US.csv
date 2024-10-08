@@ -1,0 +1,76 @@
+Connect,Connect
+Disconnect,Disconnect
+"Some error during Facebook login.","Some error during Facebook login."
+"Security check failed. Please try again.","Security check failed. Please try again."
+"Facebook Connect process aborted.","Facebook Connect process aborted."
+"Sorry, ""%s"" error occured. Please try again.","Sorry, ""%s"" error occured. Please try again."
+"Your Facebook account is already connected to one of our store accounts.","Your Facebook account is already connected to one of our store accounts."
+"Your Facebook account is now connected to your new user accout at our store.
+                    You can login next time by the Facebook SocialLogin button or Store user account.
+                    Account confirmation mail has been sent to your email.","Your Facebook account is now connected to your new user accout at our store.
+                    You can login next time by the Facebook SocialLogin button or Store user account.
+                    Account confirmation mail has been sent to your email."
+"You have successfully logged in using your Facebook account.","You have successfully logged in using your Facebook account."
+"We find you already have an account at our store.
+                    Your Facebook account is now connected to your store account.
+                    Account confirmation mail has been sent to your email.","We find you already have an account at our store.
+                    Your Facebook account is now connected to your store account.
+                    Account confirmation mail has been sent to your email."
+"Sorry, could not retrieve your Facebook first name. Please try again.","Sorry, could not retrieve your Facebook first name. Please try again."
+"Sorry, could not retrieve your Facebook last name. Please try again.","Sorry, could not retrieve your Facebook last name. Please try again."
+"Your Facebook account is now connected to your new user accout at our store.
+                You can login next time by the Facebook SocialLogin button or Store user account.
+                Account confirmation mail has been sent to your email.","Your Facebook account is now connected to your new user accout at our store.
+                You can login next time by the Facebook SocialLogin button or Store user account.
+                Account confirmation mail has been sent to your email."
+"Some error during Google login.","Some error during Google login."
+"Google Connect process aborted.","Google Connect process aborted."
+"Your Google account is already connected to one of our store accounts.","Your Google account is already connected to one of our store accounts."
+"Your Google account is now connected to your new user accout at our store. You can login next time by the Google SocialLogin button or Store user account. Account confirmation mail has been sent to your email.","Your Google account is now connected to your new user accout at our store. You can login next time by the Google SocialLogin button or Store user account. Account confirmation mail has been sent to your email."
+"You have successfully logged in using your Google account.","You have successfully logged in using your Google account."
+"We find you already have an account at our store. Your Google account is now connected to your store account. Account confirmation mail has been sent to your email.","We find you already have an account at our store. Your Google account is now connected to your store account. Account confirmation mail has been sent to your email."
+"Sorry, could not retrieve your Google first name. Please try again.","Sorry, could not retrieve your Google first name. Please try again."
+"Sorry, could not retrieve your Google last name. Please try again.","Sorry, could not retrieve your Google last name. Please try again."
+"Some error during Linkedin login.","Some error during Linkedin login."
+"Linkedin Connect process aborted.","Linkedin Connect process aborted."
+"Your Linkedin account is already connected to one of our store accounts.","Your Linkedin account is already connected to one of our store accounts."
+"Your Linkedin account is now connected to your new user accout at our store. You can login next time by the Linkedin SocialLogin button or Store user account. Account confirmation mail has been sent to your email.","Your Linkedin account is now connected to your new user accout at our store. You can login next time by the Linkedin SocialLogin button or Store user account. Account confirmation mail has been sent to your email."
+"You have successfully logged in using your Linkedin account.","You have successfully logged in using your Linkedin account."
+"We find you already have an account at our store. Your Linkedin account is now connected to your store account. Account confirmation mail has been sent to your email.","We find you already have an account at our store. Your Linkedin account is now connected to your store account. Account confirmation mail has been sent to your email."
+"Sorry, could not retrieve your Linkedin first name.","Sorry, could not retrieve your Linkedin first name."
+"Sorry, could not retrieve your Linkedin last name.","Sorry, could not retrieve your Linkedin last name."
+"Some error during Twitter login.","Some error during Twitter login."
+"Twitter Connect process aborted","Twitter Connect process aborted"
+"Twitter Connect process aborted.","Twitter Connect process aborted."
+"Your Twitter account is already connected to one of our store accounts.","Your Twitter account is already connected to one of our store accounts."
+"Your Twitter account is now connected to your new user accout at our store. You can login next time by the Twitter SocialLogin button or Store user account. Account confirmation mail has been sent to your email.","Your Twitter account is now connected to your new user accout at our store. You can login next time by the Twitter SocialLogin button or Store user account. Account confirmation mail has been sent to your email."
+"You have successfully logged in using your Twitter account.","You have successfully logged in using your Twitter account."
+"We find you already have an account at our store. Your Twitter account is now connected to your store account. Account confirmation mail has been sent to your email.","We find you already have an account at our store. Your Twitter account is now connected to your store account. Account confirmation mail has been sent to your email."
+"Sorry, could not retrieve your Twitter name. Please try again.","Sorry, could not retrieve your Twitter name. Please try again."
+"Since Twitter doesn't support third-party access to your email address, we were unable to send you your store accout credentials. To be able to login using store account credentials you will need to update your email address and password using our <a href=""%s"">Edit Account Information</a>.","Since Twitter doesn't support third-party access to your email address, we were unable to send you your store accout credentials. To be able to login using store account credentials you will need to update your email address and password using our <a href=""%s"">Edit Account Information</a>."
+"Unable to retrieve access code.","Unable to retrieve access code."
+"Required HTTP method is not supported.","Required HTTP method is not supported."
+"Unspecified OAuth error occurred.","Unspecified OAuth error occurred."
+"HTTP error %d occurred while issuing request.","HTTP error %d occurred while issuing request."
+"Unable to retrieve access token.","Unable to retrieve access token."
+"No refresh token, unable to refresh access token.","No refresh token, unable to refresh access token."
+"No access token available.","No access token available."
+"No refresh token, nothing to revoke.","No refresh token, nothing to revoke."
+"Unable to proceed without an access token.","Unable to proceed without an access token."
+"Unable to retrieve request token.","Unable to retrieve request token."
+"Vendor Social Login","Vendor Social Login"
+"Social Login Google Configuration Options","Social Login Google Configuration Options"
+"Enable Google Login","Enable Google Login"
+"Google API Client ID","Google API Client ID"
+"Google API Client Secret","Google API Client Secret"
+"Social Login Facebook Configuration Options","Social Login Facebook Configuration Options"
+"Enable Facebook Login","Enable Facebook Login"
+"Facebook App ID","Facebook App ID"
+"Facebook App Secret","Facebook App Secret"
+"Social Login Twitter Configuration Options","Social Login Twitter Configuration Options"
+"Enable Twitter Login","Enable Twitter Login"
+"Consumer Key","Consumer Key"
+"Consumer Secret","Consumer Secret"
+"Social Login Linkedin Configuration Options","Social Login Linkedin Configuration Options"
+"Enable Linkedin Login","Enable Linkedin Login"
+Login,Login

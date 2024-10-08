@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_catalog_product_save_entity_after">
+    	<observer name="controller_action_catalog_product_save_entity_after_cedcommerce" instance="Ced\CsMarketplace\Observer\Productedit" />
+    </event>
+    <event name="controller_action_postdispatch_catalog_product_massStatus">
+        <observer name="Ced_CsMarketplace_Controller_Action_Postdispatch_Adminhtml_Catalog_Product_MassStatus" instance="Ced\CsMarketplace\Observer\SaveStatusChange" shared="false" />
+    </event>
+    <event name="controller_action_postdispatch_catalog_product_action_attribute_save">
+        <observer name="Ced_CsMarketplace_Controller_Action_Postdispatch_Adminhtml_Catalog_Product_Action_Attribute_Save" instance="Ced\CsMarketplace\Observer\SaveVproductAttributesData" shared="false" />
+    </event>
+</config>

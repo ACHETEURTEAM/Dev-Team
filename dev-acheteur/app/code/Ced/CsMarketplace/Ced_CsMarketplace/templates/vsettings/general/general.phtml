@@ -1,0 +1,18 @@
+<?php
+
+
+
+?>
+
+<h2 ><?= /* @noEscape */ __('Payment Method')." ". /* @noEscape */ __('Information') ?></h2>
+<?= /* @noEscape */ $block->getFormHtml(); ?>
+<div class="buttons-set">
+	<p class="required"><?= /* @noEscape */ __('* Required Fields') ?></p>
+	<p class="back-link"><a href="<?= /* @noEscape */ $block->escapeUrl($block->getBackUrl()) ?>"><small>&laquo; </small><?= /* @noEscape */ __('Back') ?></a></p>
+	<button type="submit" onClick="dataForm.submit();" title="<?= /* @noEscape */ __('Save') ?>" class="button"><span><span><?= /* @noEscape */ __('Save') ?></span></span></button>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('form-validate', true);
+//]]>
+</script>

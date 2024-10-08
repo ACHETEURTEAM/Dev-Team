@@ -1,0 +1,55 @@
+"No Shipping Methods are Available.","No Shipping Methods are Available."
+"The Shipping Methods has been saved.","The Shipping Methods has been saved."
+"Shipping Methods","Shipping Methods"
+"Shipping Settings","Shipping Settings"
+"The Shipping settings has been saved.","The Shipping settings has been saved."
+"Shipping address is not set","Shipping address is not set"
+"Unable to save shipping information. Please check input data.","Unable to save shipping information. Please check input data."
+"Carrier with such method not found: %1, %2","Carrier with such method not found: %1, %2"
+Vendor,Vendor
+Admin,Admin
+"Please select region, state or province","Please select region, state or province"
+"Origin Address Details","Origin Address Details"
+Country,Country
+State/Province,State/Province
+City,City
+"Zip/Postal Code","Zip/Postal Code"
+Yes,Yes
+No,No
+Active,Active
+"Estimate Tax","Estimate Tax"
+"Estimate Shipping and Tax","Estimate Shipping and Tax"
+"Address %1 <span>of %2</span>","Address %1 <span>of %2</span>"
+"Shipping To","Shipping To"
+Change,Change
+"Shipping Method","Shipping Method"
+"Sorry, no quotes are available for this order right now.","Sorry, no quotes are available for this order right now."
+"Incl. Tax","Incl. Tax"
+"Excl. Tax","Excl. Tax"
+Items,Items
+"Edit Items","Edit Items"
+"Product Name","Product Name"
+Qty,Qty
+"Continue to Billing Information","Continue to Billing Information"
+"Back to Select Addresses","Back to Select Addresses"
+Loading...,Loading...
+Shipping,Shipping
+Settings,Settings
+Save,Save
+"* Required Fields","* Required Fields"
+Back,Back
+Methods,Methods
+"Sorry, no quotes are available for this order at this time","Sorry, no quotes are available for this order at this time"
+"Shipping Address","Shipping Address"
+"New Address","New Address"
+"Select Method","Select Method"
+Price,Price
+"Method Title","Method Title"
+"Carrier Title","Carrier Title"
+Next,Next
+"Save Address","Save Address"
+Cancel,Cancel
+"Enable Vendor MultiShipping System","Enable Vendor MultiShipping System"
+"Vendor Multi Shipping","Vendor Multi Shipping"
+"Charge Transfer To","Charge Transfer To"
+"Vendor Shipping Carriers","Vendor Shipping Carriers"
